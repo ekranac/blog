@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+        {% for post in posts %}
+            <div class="post">
+                <h3>{{ post.title }} ( {{post.created.strftime("%b %d")}}, {{post.created.year}} )</h3>
+                <a href="/post/{{ post.key().id() }}">View post</a>
+                <div class="content">
+                    {{ post.content }}
+                </div>
+            </div>
+        {% endfor %}
+{% endblock %}

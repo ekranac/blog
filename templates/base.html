@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ page_title }}</title>
+</head>
+<body>
+    <h1>Ziga Besal Blog</h1>
+    <div style="float:right; margin-top:-60px;">
+    <ul style="list-style:none;">
+        <li style="display:inline; margin-right:15px;"><a href="/">Home</a></li>
+        <li style="display:inline; margin-right:15px;"><a href="/writepost">New post</a></li>
+    </ul>
+    </div>
+    <hr>
+    {% block content %}
+    {% endblock %}
+</body>
+</html>
